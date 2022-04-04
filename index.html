@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devicES</title>
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <div class="logo">
+                <i class="fa fa-desktop fa-3x fa-fw"></i>
+                <span><a href="#">devicES</a></span>
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#page">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="hidden-menu">
+                
+                <button class="mob-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul id="menu">
+                    <li><a href="#page" class="btn" data-target="page">Home</a></li>
+                    <li><a href="#shop" class="btn" data-target="online-shop">Shop</a></li>
+                    <li><a href="#contact" class="btn" data-target="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="space"></div>
+        <div id="home">
+            <picture>
+                <source media="(min-width:1100px)" srcset="img/bcg-big.jpg">
+                <source media="(min-width:650px)" srcset="img/bcg-med.jpg">
+                <source media="(min-width:425px)" srcset="img/bcg-small.jpg">
+                <img src="img/bcg-small.jpg" alt="home_img">
+            </picture>
+
+            <h1>The largest offer of laptops, mobile and tablet devices</h1>
+            <p><a href="#shop">New arrivals<i class="fas fa-long-arrow-alt-right"></i></a></p>
+        </div>
+
+        <div id="devices-menu">
+            <ul>
+                <li>
+                    <a href="#" class="button" data-target="devices">All</a>
+                </li>
+                <li>
+                    <a href="#" class="button" data-target="laptops">Laptops</a>
+                </li>
+                <li>
+                    <a href="#" class="button" data-target="phones">Phones</a>
+                </li>
+                <li>
+                    <a href="#" class="button" data-target="tablets">Tablets</a>
+                </li>
+                <li>
+                    <a href="#" class="button" data-target="speakers">Speakers</a>
+                </li>
+                <li>
+                    <a href="#" class="button" data-target="bags">Bags</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="shop">
+            <div class="space"></div>
+
+            <div class="cart">
+                <h3>SHOP</h3>
+                <div class="cart-logo">
+                    <a><i class="fa fa-shopping-cart fa-2x"></i><br><p id="devices-number">No devices</p></a>
+                    <div id="shopping-cart">
+                        <table id="cart-content" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <hr>
+
+                        <a href="#" id="clear-cart" class="button">Clear Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <form id="search">
+                <input type="text" placeholder="Search device..." id="search-device">
+                <button type="submit" id="search-btn"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <div id="online-shop">
+            <div class="devices phones">
+                <div class="card">
+                    <img src="img/Apple-iPhone-12.jpg" alt="iPhone-12" style="width:100%">
+                    <h1>iPhone 12</h1>
+                    <p class="price">$2500</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis.</p>
+                    <p><button class="add" data-id="1">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices laptops">
+                <div class="card">
+                    <img src="img/ASUS-Vivobook.webp" alt="ASUS-Vivobook" style="width:100%">
+                    <h1>Asus Vivobook</h1>
+                    <p class="price">$3450.99</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae iusto magni
+                        fugit
+                        assumenda doloremque incidunt dicta id.</p>
+                    <p><button class="add" data-id="2">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices bags">
+                <div class="card">
+                    <img src="img/Backpack-2.webp" alt="Backpack-2" style="width:100%">
+                    <h1>Backpack</h1>
+                    <p class="price">$55</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis culpa.</p>
+                    <p><button class="add" data-id="3">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices bags">
+                <div class="card">
+                    <img src="img/Backpack.webp" alt="Backpack" style="width:100%">
+                    <h1>Backpack</h1>
+                    <p class="price">$65</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis.</p>
+                    <p><button class="add" data-id="4">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices bags">
+                <div class="card">
+                    <img src="img/Business.jpg" alt="Business" style="width:100%">
+                    <h1>Business</h1>
+                    <p class="price">$85</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium libero aliquam quod,
+                        assumenda quo reprehenderit voluptates.</p>
+                    <p><button class="add" data-id="5">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices speakers">
+                <div class="card">
+                    <img src="img/Edifer S360.jpeg" alt="Edifer S360" style="width:100%">
+                    <h1>Edifer S360</h1>
+                    <p class="price">$1750</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium libero aliquam quod,
+                        assumenda quo reprehenderit voluptates.</p>
+                    <p><button class="add" data-id="6">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices phones">
+                <div class="card">
+                    <img src="img/Galaxy A32.jpg" alt="Galaxy A32" style="width:100%">
+                    <h1>Galaxy A32</h1>
+                    <p class="price">$765</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis culpa.</p>
+                    <p><button class="add" data-id="7">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices phones">
+                <div class="card">
+                    <img src="img/Galaxy A73.jpg" alt="Galaxy A73" style="width:100%">
+                    <h1>Galaxy A73</h1>
+                    <p class="price">$865</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis culpa.</p>
+                    <p><button class="add" data-id="8">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices tablets">
+                <div class="card">
+                    <img src="img/Huawei-910A.jpg" alt="Huawei-910A" style="width:100%">
+                    <h1>Huawei 910A</h1>
+                    <p class="price">$1950.99</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae iusto magni
+                        fugit
+                        assumenda doloremque incidunt dicta id.</p>
+                    <p><button class="add" data-id="9">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices phones">
+                <div class="card">
+                    <img src="img/Galaxy-S21.webp" alt="Galaxy-S21" style="width:100%">
+                    <h1>Galaxy S21</h1>
+                    <p class="price">$2150</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis culpa quas.</p>
+                    <p><button class="add" data-id="10">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices phones">
+                <div class="card">
+                    <img src="img/Xiaomi-Redmi-10A.webp" alt="Xiaomi Redmi 10A" style="width:100%">
+                    <h1>Xiaomi 10A</h1>
+                    <p class="price">$1750</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis culpa.</p>
+                    <p><button class="add" data-id="11">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices laptops">
+                <div class="card">
+                    <img src="img/huawei-990.jpg" alt="huawei-990" style="width:100%">
+                    <h1>Huawei 990</h1>
+                    <p class="price">$3750.99</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae iusto magni
+                        fugit
+                        assumenda doloremque incidunt dict.</p>
+                    <p><button class="add" data-id="12">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices speakers">
+                <div class="card">
+                    <img src="img/huawei-sound-x.jpg" alt="huawei-sound-x" style="width:100%">
+                    <h1>Huawei sound</h1>
+                    <p class="price">$500</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis.</p>
+                    <p><button class="add" data-id="13">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices phones">
+                <div class="card">
+                    <img src="img/iPhone13.webp" alt="iPhone13" style="width:100%">
+                    <h1>iPhone 13</h1>
+                    <p class="price">$2690</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis.</p>
+                    <p><button class="add" data-id="14">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices tablets">
+                <div class="card">
+                    <img src="img/Lenovo-M10.webp" alt="Lenovo-M10" style="width:100%">
+                    <h1>Lenovo M10</h1>
+                    <p class="price">$1500</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis culpa.</p>
+                    <p><button class="add" data-id="15">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices laptops">
+                <div class="card">
+                    <img src="img/Mi-Notebook-15.webp" alt="Mi-Notebook-15" style="width:100%">
+                    <h1>Mi Notebook 15</h1>
+                    <p class="price">$1790</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis.</p>
+                    <p><button class="add" data-id="16">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices tablets">
+                <div class="card">
+                    <img src="img/Nokia-T20.webp" alt="Nokia-T20" style="width:100%">
+                    <h1>Nokia T20</h1>
+                    <p class="price">$450</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis culpa quas.</p>
+                    <p><button class="add" data-id="17">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices speakers">
+                <div class="card">
+                    <img src="img/One-TX.jpg" alt="One-TX" style="width:100%">
+                    <h1>One TX</h1>
+                    <p class="price">$265</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis culpa.</p>
+                    <p><button class="add" data-id="18">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices phones">
+                <div class="card">
+                    <img src="img/Samsung-Galaxy-A03.webp" alt="Samsung-Galaxy-A03" style="width:100%">
+                    <h1>Galaxy A03</h1>
+                    <p class="price">$950</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis culpa.</p>
+                    <p><button class="add" data-id="19">Add to Cart</button></p>                   
+                </div>
+            </div>
+
+            <div class="devices phones">
+                <div class="card">
+                    <img src="img/Xiaomi Mi A3.jpg" alt="Xiaomi Mi A3" style="width:100%">
+                    <h1>Xiaomi Mi A3</h1>
+                    <p class="price">$700</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis culpa.</p>
+                    <p><button class="add" data-id="20">Add to Cart</button></p>
+                </div>
+            </div>
+
+            <div class="devices phones">
+                <div class="card">
+                    <img src="img/Xiaomi Redmi 9.jpg" alt="Xiaomi Redmi 9" style="width:100%">
+                    <h1>Xiaomi Redmi 9</h1>
+                    <p class="price">$890</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil tempora accusantium, sunt
+                        voluptate, rem, nesciunt corporis officiis.</p>
+                    <p><button class="add" data-id="21">Add to Cart</button></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contact">
+            <div class="subscribe">
+                <div class="newsletter">
+                    <i class="fas fa-paper-plane"></i>
+                    <p>Subscribe to our newsletter</p>
+                </div>
+
+
+                <form id="form">
+                    <input type="email" name="email" id="email" value="" placeholder="Enter Your Email">
+                    <button type="submit"><i class="fa fa-arrow-circle-right"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="social">
+                <ul class="network">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+
+                <ul class="info">
+                    <li><i class="fas fa-envelope"></i><a href="mailto:devices@yahoo.com">devices@yahoo.com</a></li>
+                    <li><i class="fas fa-mobile"></i><a href="tel:012/345-678">012/345-678</a></li>
+                    <li><i class="fas fa-map-marker"></i>78 000 Banja Luka</li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="rights">
+                <p> devicES © All rights reserved</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
